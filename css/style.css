@@ -1,0 +1,200 @@
+html * {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+/*---------------------------------*/
+header {
+    background-image: url("../img/header_blur.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    margin: 15px 0px;
+    /* -webkit-filter: blur(3px); */
+    filter: blur(3px);
+}
+
+header #subject {
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    /* user-select: none; */
+}
+
+header #subject * {
+    margin: 0;
+}
+
+header #subject #first_name {
+    border: 2px solid #ffffff;
+    font-size: 20px;
+    padding: 5px 25px;
+}
+
+#profile_description {
+    width: 350px;
+}
+
+/*---------------------------------------------------*/
+
+aside {
+    background-color: #ebebeb;
+    font-size: 11pt;
+    width: 25%;
+    
+}
+
+aside section {
+    margin: 25px 20px 0px 20px;
+}
+
+aside table {
+    width: 100%;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+aside table,
+tr {
+    border-collapse: collapse;
+    border-top: 1px solid #a1a1a1;
+}
+
+aside table td {
+    padding: 5px;
+}
+
+aside caption {
+    text-align: left;
+    font-weight: 700;
+    font-size: 16pt;
+}
+
+.bold_table {
+    font-weight: 600;
+}
+
+#profile_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile_image img {
+    border-radius: 50%;
+    width: 162px;
+    height: 162px;
+    /* margin: 16px 0 16px 0; */
+    align-items: center;
+}
+
+/*-------------------------------------------*/
+
+.fix-resp-date {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fix-resp-date ul {
+    margin: 0px 15px 0px 0px;
+}
+
+#jobs {
+    margin: 0px 0px 0px 25px;
+}
+
+hr {
+    margin: 4px 0;
+}
+
+
+
+#certificates * {
+    margin: 0;
+}
+
+.bold_certificates {
+    font-weight: bold;
+}
+
+
+
+
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    font-size: 12pt;
+}
+
+.bold_certificates {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+    /*For large screens*/
+
+    #profile_image img {
+        transition: 0.25s;
+    }
+
+    #profile_image img:hover {
+        transition: 0.5s;
+        transform: scale(1.25);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    /*for mobile*/
+    header #subject {
+        display: none;
+    }
+
+    aside {
+        width: 100%;
+        align-items: center;
+    }
+
+    #profile_image {
+        display: flex;
+    }
+
+    #profile_image img {
+        align-self: center;
+    }
+
+    section#jobs {
+        display: none;
+    }
+
+}
